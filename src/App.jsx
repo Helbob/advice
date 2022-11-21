@@ -61,7 +61,7 @@ function App() {
           <button onClick={submit}>Udregn</button>
         </div>
       </form>
-      <h1>{socialMedia}KM</h1>
+      <h1>{socialMedia}Liter vand</h1>
     </div>
   );
 }
