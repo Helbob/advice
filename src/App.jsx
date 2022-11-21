@@ -33,14 +33,6 @@ function App() {
     setSocialMedia(hej.current.value * inputField.current.value);
   }
 
-  /*
-  function isTwitter() {
-    testerTo.value = 2;
-  }
-  function isFacebook() {
-    tester.value = 0.46;
-  } */
-
   return (
     <div className="App">
       <form>
