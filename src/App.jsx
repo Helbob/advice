@@ -42,8 +42,8 @@ function App() {
             måneden.
           </h2>
           <h3>
-            Det er det samme som {cupsOfCoffeeinAYear.toFixed(0)} kopper kaffe
-            om måneden.
+            Det er det samme som {cupsOfCoffeeinAYear.toFixed(0)} &#9749; kopper
+            kaffe om måneden.
           </h3>
           <h2>... Og {yearlyConsumation.toFixed(0)} liter vand om året</h2>
           <h3>Det er det samme som {bathtubsInAYear.toFixed(0)} karbade.</h3>
