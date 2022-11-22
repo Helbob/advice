@@ -1,6 +1,5 @@
 import React from "react";
 import { useState, useRef } from "react";
-import App from "../App";
 function Results(props) {
   const [socialMedia, setSocialMedia] = useState(false);
   console.log(socialMedia);
