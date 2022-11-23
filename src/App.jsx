@@ -57,6 +57,9 @@ function App() {
             then, try out our social media CO2 usage calculator and see how much
             your social media usage emits. We will put it in perspective to it's
             easier to understand.
+            <br />
+            Simply choose your prefered social media and put in the hours you
+            spent on it on a daily basis.
           </p>
           <form>
             <div className="form-control">
