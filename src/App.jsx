@@ -34,37 +34,42 @@ function App() {
     <div className="App">
       {calculateWater ? (
         <div>
-          <h1>
-            Den CO2 det udleder svarer til {socialMedia} Liter vand om dagen
-          </h1>
+          <h1>The CO2 it emits is equal to {socialMedia}L water a day.</h1>
           <h2>
-            Hvilket svarer til {monthlyConsumation.toFixed(0)} liter vand om
-            måneden.
+            Which is equal to {monthlyConsumation.toFixed(0)}L water a month.
           </h2>
           <h3>
-            Det er det samme som {cupsOfCoffeeinAYear.toFixed(0)} &#9749; kopper
-            kaffe om måneden.
+            Which is the same as {cupsOfCoffeeinAYear.toFixed(0)} &#9749; cups
+            of coffee a month.
           </h3>
-          <h2>... Og {yearlyConsumation.toFixed(0)} liter vand om året</h2>
-          <h3>Det er det samme som {bathtubsInAYear.toFixed(0)} karbade.</h3>
-          <button onClick={setFalse}>Gaa tilbage</button>
+          <h2>...And {yearlyConsumation.toFixed(0)}L water a year</h2>
+          <h3>
+            Which is the same as filling up {bathtubsInAYear.toFixed(0)}{" "}
+            bathtubs.
+          </h3>
+          <button onClick={setFalse}>Go back</button>
         </div>
       ) : (
         <>
           <h2>Overskrift her</h2>
-          <p>Information + Guide her</p>
+          <p>
+            Have you ever wondered how much CO2 your social media emits? Well
+            then, try out our social media CO2 usage calculator and see how much
+            your social media usage emits. We will put it in perspective to it's
+            easier to understand.
+          </p>
           <form>
             <div className="form-control">
-              <label htmlFor="social-media">Sociale Medie</label>
+              <label htmlFor="social-media">Social Media</label>
               <select onChange={handleCalc} ref={selectMedia}>
-                <option value="chose">Vælg medie</option>
+                <option value="chose">Select media</option>
                 <option value="7.2">Facebook</option>
                 <option value="6">Twitter</option>
                 <option value="13.8">Reddit</option>
               </select>
             </div>
             <div className="form-control">
-              <label htmlFor="input-number">Antal timer</label>
+              <label htmlFor="input-number">Hours</label>
               <input
                 required
                 type="number"
@@ -72,7 +77,7 @@ function App() {
                 id="input-number"
                 ref={inputField}
               />
-              <button onClick={submit}>Udregn</button>
+              <button onClick={submit}>Calculate your CO2 usage.</button>
             </div>
           </form>
         </>
