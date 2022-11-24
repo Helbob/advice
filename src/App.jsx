@@ -40,31 +40,42 @@ function App() {
           </div>
           <div className="text">
             <div className="example">
-            <h2>In a month it amounts to {monthlyConsumation.toFixed(0)} litres </h2>
-            <h1>&#9749;</h1>
-              <h3>... which is just about the same as {cupsOfCoffeeinAYear.toFixed(0)} cups of coffee.</h3>
+              <h2>
+                In a month it amounts to {monthlyConsumation.toFixed(0)} litres{" "}
+              </h2>
+              <h1>&#9749;</h1>
+              <h3>
+                ... which is just about the same as{" "}
+                {cupsOfCoffeeinAYear.toFixed(0)} cups of coffee.
+              </h3>
             </div>
             <div className="example">
-            <h2>In a year the amount is {yearlyConsumation.toFixed(0)} litres</h2>
-            <h1>🛁</h1>
-            <h3>... or the equivalent of {bathtubsInAYear.toFixed(0)}{" "} filled bathtubs!</h3></div>
+              <h2>
+                In a year the amount is {yearlyConsumation.toFixed(0)} litres
+              </h2>
+              <h1>🛁</h1>
+              <h3>
+                ... or the equivalent of {bathtubsInAYear.toFixed(0)} filled
+                bathtubs!
+              </h3>
+            </div>
             <button onClick={setFalse}>Try again</button>
           </div>
           <div className="phone2"></div>
-          </div>
+        </div>
       ) : (
         <div className="container">
           <div className="phone1"></div>
           <div className="header">
             <h1>Overskrift her</h1>
             <h3>
-            Have you ever wondered how much CO2 your social media emits? Well
-            then, try out our social media CO2 usage calculator and see how much
-            your social media usage emits. We will put it in perspective so it's
-            easier to understand.
-            <br />
-            Simply choose your prefered social media and put in the hours you
-            spent on it on a daily basis.
+              Have you ever wondered how much CO2 your social media emits? Well
+              then, try out our social media CO2 usage calculator and see how
+              much your social media usage emits. We will put it in perspective
+              so it's easier to understand.
+              <br />
+              Simply choose your prefered social media and put in the hours you
+              spent on it on a daily basis.
             </h3>
           </div>
           <form className="text">
@@ -77,6 +88,12 @@ function App() {
                 <option value="7.2">Facebook</option>
                 <option value="6">Twitter</option>
                 <option value="13.8">Reddit</option>
+                <option value="7.2">Instragram</option>
+                <option value="4.8">Youtube</option>
+                <option value="5.4">Twitch</option>
+                <option value="6">LinkedIn</option>
+                <option value="7.2">Snapchat</option>
+                <option value="16.2">TikTok</option>
               </select>
             </div>
             <div className="form-control">
@@ -97,7 +114,6 @@ function App() {
           <div className="phone2"></div>
         </div>
       )}
-      
     </div>
   );
 }
