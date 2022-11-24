@@ -122,7 +122,7 @@ body {
 .header {
   grid-row: 1/2;
   grid-column: 1/4;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
   width: 75%;
 }
 
