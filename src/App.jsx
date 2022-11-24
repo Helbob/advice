@@ -33,26 +33,31 @@ function App() {
   return (
     <div className="App">
       {calculateWater ? (
-        <div>
-          <h1>The CO2 it emits is equal to {socialMedia}L water a day.</h1>
-          <h2>
-            Which is equal to {monthlyConsumation.toFixed(0)}L water a month.
-          </h2>
-          <h3>
-            Which is the same as {cupsOfCoffeeinAYear.toFixed(0)} &#9749; cups
-            of coffee a month.
-          </h3>
-          <h2>...And {yearlyConsumation.toFixed(0)}L water a year</h2>
-          <h3>
-            Which is the same as filling up {bathtubsInAYear.toFixed(0)}{" "}
-            bathtubs.
-          </h3>
-          <button onClick={setFalse}>Try again</button>
-        </div>
+        <div className="container">
+          <div className="phone1"></div>
+          <div className="header">
+            <h1>You use {socialMedia.toFixed(1)} litres of water per day!</h1>
+          </div>
+          <div className="text">
+            <div className="example">
+            <h2>In a month it amounts to {monthlyConsumation.toFixed(0)} litres </h2>
+            <h1>&#9749;</h1>
+              <h3>... which is just about the same as {cupsOfCoffeeinAYear.toFixed(0)} cups of coffee.</h3>
+            </div>
+            <div className="example">
+            <h2>In a year the amount is {yearlyConsumation.toFixed(0)} litres</h2>
+            <h1>🛁</h1>
+            <h3>... or the equivalent of {bathtubsInAYear.toFixed(0)}{" "} filled bathtubs!</h3></div>
+            <button onClick={setFalse}>Try again</button>
+          </div>
+          <div className="phone2"></div>
+          </div>
       ) : (
-        <>
-          <h2>How much water do you waste scrolling?</h2>
-          <p>
+        <div className="container">
+          <div className="phone1"></div>
+          <div className="header">
+            <h1>Overskrift her</h1>
+            <h3>
             Have you ever wondered how much CO2 your social media emits? Well
             then, try out our social media CO2 usage calculator and see how much
             your social media usage emits. We will put it in perspective so it's
@@ -60,8 +65,9 @@ function App() {
             <br />
             Simply choose your prefered social media and put in the hours you
             spent on it on a daily basis.
-          </p>
-          <form>
+            </h3>
+          </div>
+          <form className="text">
             <div className="form-control">
               <label htmlFor="social-media">
                 What is your preffered social media?
@@ -88,8 +94,10 @@ function App() {
               <button onClick={submit}>Show results</button>
             </div>
           </form>
-        </>
+          <div className="phone2"></div>
+        </div>
       )}
+      
     </div>
   );
 }
