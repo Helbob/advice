@@ -70,8 +70,7 @@ function App() {
             <h1>How much water do you waste scrolling?</h1>
             <h3>
               Have you ever wondered how much CO2 your social media emits? Well
-              then, try out our social media CO2 usage calculator and see how
-              much your social media usage emits. We will compare the emissions from your social media usage with emissions generated from domestic water use, to put it into perspective!
+              then, try out our social media CO2 usage calculator and find out. We will compare the emissions from your social media usage with emissions generated from domestic water use, to put it into perspective!
               <br />
               Simply choose your prefered social media and put in the hours you
               spent on it on a daily basis.
