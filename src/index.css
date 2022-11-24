@@ -75,7 +75,7 @@ button:focus-visible {
 }
 
 body {
-  background-image: url("background.svg");
+  background-image: url("/background.svg");
   object-fit: cover;
   padding: 5%;
   display: block !important;
