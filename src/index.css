@@ -168,3 +168,10 @@ select {
 label {
   font-size: 1.1rem;
 }
+
+@media (max-width: 750px) {
+  .phone1,
+  .phone2 {
+    display: none;
+  }
+}
