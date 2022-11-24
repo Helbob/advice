@@ -67,7 +67,7 @@ function App() {
         <div className="container">
           <div className="phone1"></div>
           <div className="header">
-            <h1>Overskrift her</h1>
+            <h1>How much water do you waste scrolling?</h1>
             <h3>
               Have you ever wondered how much CO2 your social media emits? Well
               then, try out our social media CO2 usage calculator and see how
