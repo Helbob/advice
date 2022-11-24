@@ -51,11 +51,11 @@ function App() {
         </div>
       ) : (
         <>
-          <h2>Overskrift her</h2>
+          <h2>How much water do you waste scrolling?</h2>
           <p>
             Have you ever wondered how much CO2 your social media emits? Well
             then, try out our social media CO2 usage calculator and see how much
-            your social media usage emits. We will put it in perspective to it's
+            your social media usage emits. We will put it in perspective so it's
             easier to understand.
             <br />
             Simply choose your prefered social media and put in the hours you
@@ -63,24 +63,29 @@ function App() {
           </p>
           <form>
             <div className="form-control">
-              <label htmlFor="social-media">Social Media</label>
+              <label htmlFor="social-media">
+                What is your preffered social media?
+              </label>
               <select onChange={handleCalc} ref={selectMedia}>
-                <option value="chose">Select media</option>
+                <option value="chose">Choose an option...</option>
                 <option value="7.2">Facebook</option>
                 <option value="6">Twitter</option>
                 <option value="13.8">Reddit</option>
               </select>
             </div>
             <div className="form-control">
-              <label htmlFor="input-number">Hours</label>
+              <label htmlFor="input-number">
+                How many hours a day do you spend on it?
+              </label>
               <input
                 required
                 type="number"
                 name="number"
                 id="input-number"
                 ref={inputField}
+                placeholder="Choose hours..."
               />
-              <button onClick={submit}>Calculate your CO2 usage.</button>
+              <button onClick={submit}>Show results</button>
             </div>
           </form>
         </>
