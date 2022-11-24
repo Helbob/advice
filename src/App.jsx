@@ -47,7 +47,7 @@ function App() {
             Which is the same as filling up {bathtubsInAYear.toFixed(0)}{" "}
             bathtubs.
           </h3>
-          <button onClick={setFalse}>Go back</button>
+          <button onClick={setFalse}>Try again</button>
         </div>
       ) : (
         <>
