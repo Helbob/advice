@@ -81,7 +81,7 @@ function App() {
               <label htmlFor="social-media">
                 What is your preffered social media?
               </label>
-              <select onChange={handleCalc} ref={selectMedia}>
+              <select required onChange={handleCalc} ref={selectMedia}>
                 <option value="chose">Choose an option...</option>
                 <option value="7.2">Facebook</option>
                 <option value="6">Twitter</option>
